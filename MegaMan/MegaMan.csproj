@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{245666D6-829C-41F5-91BC-3A40D22D2BB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MegaMan</RootNamespace>
+    <AssemblyName>MegaMan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="2dDrawing.cs" />
+    <Compile Include="AutomatedSprite.cs" />
+    <Compile Include="BackgroundSprite.cs" />
+    <Compile Include="BossLevel.cs" />
+    <Compile Include="BossSprite.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Explosions\Explosion.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="Level2.cs" />
+    <Compile Include="Level1.cs" />
+    <Compile Include="Level3.cs" />
+    <Compile Include="Level4.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunningSprite.cs" />
+    <Compile Include="ShootingSprite.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="SpriteManager.cs" />
+    <Compile Include="TravelSprite.cs" />
+    <Compile Include="UserControlledSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Explosions\_ExplosionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\DeathScreen.xnb">
+      <Link>Content\Backgrounds\DeathScreen.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\GrassBackground.xnb">
+      <Link>Content\Backgrounds\GrassBackground.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\LavaBackground.xnb">
+      <Link>Content\Backgrounds\LavaBackground.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\LevelSelectScreen.xnb">
+      <Link>Content\Backgrounds\LevelSelectScreen.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\Menu.xnb">
+      <Link>Content\Backgrounds\Menu.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\MetalBackground.xnb">
+      <Link>Content\Backgrounds\MetalBackground.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\SplashScreen.xnb">
+      <Link>Content\Backgrounds\SplashScreen.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Backgrounds\WaterBackground.xnb">
+      <Link>Content\Backgrounds\WaterBackground.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Buttons\FlowerGuyButton.xnb">
+      <Link>Content\Buttons\FlowerGuyButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Buttons\LavaGuyButton.xnb">
+      <Link>Content\Buttons\LavaGuyButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Buttons\OctopusGuyButton.xnb">
+      <Link>Content\Buttons\OctopusGuyButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Buttons\WalrusGuyButton.xnb">
+      <Link>Content\Buttons\WalrusGuyButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Fonts\Hud.xnb">
+      <Link>Content\Fonts\Hud.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Effects\bullet.xnb">
+      <Link>Content\Sound\Effects\bullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Effects\jump.xnb">
+      <Link>Content\Sound\Effects\jump.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Effects\kill.xnb">
+      <Link>Content\Sound\Effects\kill.xnb</Link>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Effects\playerDeath.xnb">
+      <Link>Content\Sound\Effects\playerDeath.xnb</Link>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Effects\ShieldDeflect.xnb">
+      <Link>Content\Sound\Effects\ShieldDeflect.xnb</Link>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Music\BossMusic.xnb">
+      <Link>Content\Sound\Music\BossMusic.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Music\GrassMusic.xnb">
+      <Link>Content\Sound\Music\GrassMusic.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Music\LavaMusic.xnb">
+      <Link>Content\Sound\Music\LavaMusic.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Music\MetalMusic.xnb">
+      <Link>Content\Sound\Music\MetalMusic.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sound\Music\WaterMusic.xnb">
+      <Link>Content\Sound\Music\WaterMusic.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bosses\GrassMan.xnb">
+      <Link>Content\Sprites\Bosses\GrassMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bosses\LavaMan.xnb">
+      <Link>Content\Sprites\Bosses\LavaMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bosses\MetalMan.xnb">
+      <Link>Content\Sprites\Bosses\MetalMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bosses\WaterMan.xnb">
+      <Link>Content\Sprites\Bosses\WaterMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\BulletWhite.xnb">
+      <Link>Content\Sprites\Bullets\BulletWhite.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\FireBullet.xnb">
+      <Link>Content\Sprites\Bullets\FireBullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\GrassBullet.xnb">
+      <Link>Content\Sprites\Bullets\GrassBullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\MetalBullet.xnb">
+      <Link>Content\Sprites\Bullets\MetalBullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\TurretBullet.xnb">
+      <Link>Content\Sprites\Bullets\TurretBullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Bullets\WaterBullet.xnb">
+      <Link>Content\Sprites\Bullets\WaterBullet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\GrassBlobGuy.xnb">
+      <Link>Content\Sprites\Enemies\GrassBlobGuy.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\GrassRunningMan.xnb">
+      <Link>Content\Sprites\Enemies\GrassRunningMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\GrassSeaHorse.xnb">
+      <Link>Content\Sprites\Enemies\GrassSeaHorse.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\GrassTurret.xnb">
+      <Link>Content\Sprites\Enemies\GrassTurret.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\LavaBlobGuySmall.xnb">
+      <Link>Content\Sprites\Enemies\LavaBlobGuySmall.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\LavaRunningMan.xnb">
+      <Link>Content\Sprites\Enemies\LavaRunningMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\LavaSeaHorse.xnb">
+      <Link>Content\Sprites\Enemies\LavaSeaHorse.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\LavaTurret.xnb">
+      <Link>Content\Sprites\Enemies\LavaTurret.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\MetalBlobGuy.xnb">
+      <Link>Content\Sprites\Enemies\MetalBlobGuy.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\MetalRunningMan.xnb">
+      <Link>Content\Sprites\Enemies\MetalRunningMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\MetalSeaHorse.xnb">
+      <Link>Content\Sprites\Enemies\MetalSeaHorse.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\MetalTurret.xnb">
+      <Link>Content\Sprites\Enemies\MetalTurret.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\WaterBlobGuy.xnb">
+      <Link>Content\Sprites\Enemies\WaterBlobGuy.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\WaterRunningMan.xnb">
+      <Link>Content\Sprites\Enemies\WaterRunningMan.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\WaterSeaHorse.xnb">
+      <Link>Content\Sprites\Enemies\WaterSeaHorse.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Enemies\WaterTurret.xnb">
+      <Link>Content\Sprites\Enemies\WaterTurret.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\GamePlay\Exit.xnb">
+      <Link>Content\Sprites\GamePlay\Exit.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\GamePlay\heart.xnb">
+      <Link>Content\Sprites\GamePlay\heart.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\GrassWorld\BlockOne.xnb">
+      <Link>Content\Sprites\Platforms\GrassWorld\BlockOne.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\GrassWorld\BlockThree.xnb">
+      <Link>Content\Sprites\Platforms\GrassWorld\BlockThree.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\GrassWorld\BlockTwo.xnb">
+      <Link>Content\Sprites\Platforms\GrassWorld\BlockTwo.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\GrassWorld\bridge.xnb">
+      <Link>Content\Sprites\Platforms\GrassWorld\bridge.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\GrassWorld\Ladder.xnb">
+      <Link>Content\Sprites\Platforms\GrassWorld\Ladder.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\LavaWorld\BlockTwo.xnb">
+      <Link>Content\Sprites\Platforms\LavaWorld\BlockTwo.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\LavaWorld\Ladder.xnb">
+      <Link>Content\Sprites\Platforms\LavaWorld\Ladder.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\LavaWorld\LavaBlockSpriteSheet.xnb">
+      <Link>Content\Sprites\Platforms\LavaWorld\LavaBlockSpriteSheet.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\LavaWorld\platformOne.xnb">
+      <Link>Content\Sprites\Platforms\LavaWorld\platformOne.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\MetalWorld\BlockFive.xnb">
+      <Link>Content\Sprites\Platforms\MetalWorld\BlockFive.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\MetalWorld\BlockFour.xnb">
+      <Link>Content\Sprites\Platforms\MetalWorld\BlockFour.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\MetalWorld\BlockOne.xnb">
+      <Link>Content\Sprites\Platforms\MetalWorld\BlockOne.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\MetalWorld\BlockThree.xnb">
+      <Link>Content\Sprites\Platforms\MetalWorld\BlockThree.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\MetalWorld\Ladder.xnb">
+      <Link>Content\Sprites\Platforms\MetalWorld\Ladder.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\BlockFour.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\BlockFour.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\BlockOne.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\BlockOne.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\BlockThree.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\BlockThree.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\BlockTwo.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\BlockTwo.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\Ladder.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\Ladder.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Platforms\WaterWorld\PlatformOne.xnb">
+      <Link>Content\Sprites\Platforms\WaterWorld\PlatformOne.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Rex\ManWhite.xnb">
+      <Link>Content\Sprites\Rex\ManWhite.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Rex\RexBlue.xnb">
+      <Link>Content\Sprites\Rex\RexBlue.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Rex\RexGreen.xnb">
+      <Link>Content\Sprites\Rex\RexGreen.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Rex\RexRed.xnb">
+      <Link>Content\Sprites\Rex\RexRed.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\MegaManContent\MegaManContent\bin\Windows\Content\Sprites\Rex\RexYellow.xnb">
+      <Link>Content\Sprites\Rex\RexYellow.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Backgrounds\Dot.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sound\Music\MenuMusic.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
