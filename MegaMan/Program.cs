@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace MegaMan
+namespace RexCommando
 {
 #if WINDOWS || LINUX
     /// <summary>

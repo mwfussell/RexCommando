@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MegaMan
+namespace RexCommando
 {
     // This sprite moves a certain for a *fixed* travel distance before it changes direction. 
     // It still changesdirection if it hits platform

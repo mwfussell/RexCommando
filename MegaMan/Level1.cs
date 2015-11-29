@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MegaMan
+namespace RexCommando
 {
     // *** WATER WORLD LEVEL ***//
     class Level1 : Level

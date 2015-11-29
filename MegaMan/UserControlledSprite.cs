@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 
-namespace MegaMan
+namespace RexCommando
 {
     public enum Animation { Run, Stand, Jump, RunShoot, StandShoot, JumpShoot };
     public enum edge { Top, Bottom, Left, Right, None };

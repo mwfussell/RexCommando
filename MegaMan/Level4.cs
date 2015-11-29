@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MegaMan
+namespace RexCommando
 {
     // *** METAL WORLD LEVEL ***//
     class Level4 : Level

@@ -7,7 +7,7 @@ using System.Threading;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Audio;
 
-namespace MegaMan
+namespace RexCommando
 {
     /// <summary>
     /// This is the main type for your game
