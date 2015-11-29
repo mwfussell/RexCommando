@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
 
 
-namespace MegaMan
+namespace RexCommando
 {
     /// <summary>
     /// This is a game component that implements IUpdateable.
@@ -402,7 +402,7 @@ namespace MegaMan
                         removeBullet = true;
                         // Detect if this is a RunningSprite who has a shield or a BossSprite with a shield. They cannot be killed if facing towards the player
                         // They can only be killed when facing away from the player
-                        if (enemies[j] is MegaMan.RunningSprite || (enemies[j] is MegaMan.BossSprite && ((MegaMan.BossSprite)enemies[j]).bossType == BossType.Running))
+                        if (enemies[j] is RexCommando.RunningSprite || (enemies[j] is RexCommando.BossSprite && ((RexCommando.BossSprite)enemies[j]).bossType == BossType.Running))
                         {
                             if (enemies[j].position.X < player.position.X && enemies[j].effect == SpriteEffects.FlipHorizontally)
                             {
@@ -418,7 +418,7 @@ namespace MegaMan
                         
                         // Detect if this is a BossSprite. They have a health damage that means they can take more hits
                         // before being killed
-                        else if (enemies[j] is MegaMan.BossSprite)
+                        else if (enemies[j] is RexCommando.BossSprite)
                         {
                             ////Make boss blink when damaged
                             //if (bossLifeWait < bossLifeWaitMax && bossLifeWaitMax % bossLifeWait <= 0.05f)
@@ -531,7 +531,7 @@ namespace MegaMan
                     }
 
                     // If this is a boss then the boss loses health
-                    if (enemies[i] is MegaMan.BossSprite)
+                    if (enemies[i] is RexCommando.BossSprite)
                     {
                         ////Make boss blink when damaged
                         //if (bossLifeWait < bossLifeWaitMax && bossLifeWaitMax % bossLifeWait <= 0.05f)
@@ -613,9 +613,9 @@ namespace MegaMan
             {
                 foreach (Sprite enemy in enemies)
                 {
-                    if (enemy is MegaMan.BossSprite)
+                    if (enemy is RexCommando.BossSprite)
                     {
-                        spriteBatch.DrawString(font, ((MegaMan.BossSprite)enemy).health.ToString(),
+                        spriteBatch.DrawString(font, ((RexCommando.BossSprite)enemy).health.ToString(),
                                                 new Vector2(enemy.Position.X + enemy.frameSize.X / 2, enemy.Position.Y - 20), Color.White);
                     }
                 }

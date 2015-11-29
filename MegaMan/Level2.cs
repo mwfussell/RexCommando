@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MegaMan
+namespace RexCommando
 {
     // *** LAVA WORLD LEVEL ***//
     class Level2 : Level

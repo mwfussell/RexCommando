@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 
-namespace MegaMan
+namespace RexCommando
 {
     class Level : Microsoft.Xna.Framework.DrawableGameComponent
     {

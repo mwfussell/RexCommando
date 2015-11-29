@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MegaMan
+namespace RexCommando
 {
     // This sprite moves a certain speed until it hit a platform and then changes direction
     class AutomatedSprite: Sprite

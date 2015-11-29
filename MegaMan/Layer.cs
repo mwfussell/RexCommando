@@ -1,4 +1,4 @@
-﻿namespace MegaMan
+﻿namespace RexCommando
 {
     using System.Collections.Generic;
     using Microsoft.Xna.Framework;
