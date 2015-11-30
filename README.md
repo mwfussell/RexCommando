@@ -4,8 +4,10 @@
    authors="Mark Fussell, Levi Fussell, Marlon Fussell"/>
 
 
-# Rex Commando. A platformer game
-Rex Commando is written with Monogame and is a MegaMan inspired, level game. See screen shots below.
+# Rex Commando
+Rex Commando is a platformer game written with Monogame. It was inspired by [MegaMan][4]. 
+
+![Rex Commando level][10]
 
 ## Prerequisites
 
@@ -30,21 +32,24 @@ At the splash screen hit enter to get to the level menu. Select a level and pres
 Use left and right arrow keys to move. Space bar to jump. Enter key to shoot. Make it to the end of each level to defeat the boss.
 
 ## Lava Man Level
-![Rex Commando level][4]
+![Rex Commando level][11]
 
 ## Grass Man Level
-![Rex Commando level][5]
+![Rex Commando level][12]
 
 ## Metal Man Level
-![Rex Commando level][6]
+![Rex Commando level][13]
 
 ## Water Man Level
-![Rex Commando level][7]
+![Rex Commando level][14]
 
 [1]: https://www.microsoft.com/en-NZ/download/details.aspx?id=30679 "Visual C++ Redistributable for Visual Studio 2012 Update 4"
 [2]: https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx "Install Visual Studio 2015"
 [3]: http://www.monogame.net/2015/04/29/monogame-3-4/ "Monogame"
-[4]: RexCommando1.png
-[5]: RexCommando2.png
-[6]: RexCommando3.png
-[7]: RexCommando4.png
+[4]: https://en.wikipedia.org/wiki/Mega_Man "Megaman video game"
+
+[10]: RexCommando-small.png
+[11]: RexCommando1.png
+[12]: RexCommando2.png
+[13]: RexCommando3.png
+[14]: RexCommando4.png
